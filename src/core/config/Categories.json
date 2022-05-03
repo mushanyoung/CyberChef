@@ -4,6 +4,12 @@
         "ops": []
     },
     {
+        "name": "Google / Index Anchors",
+        "ops": [
+            "Extract Anchor Leak Info"
+        ]
+    },
+    {
         "name": "Data format",
         "ops": [
             "To Hexdump",
