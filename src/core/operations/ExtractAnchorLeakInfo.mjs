@@ -8,6 +8,7 @@ import OperationError from "../errors/OperationError.mjs";
 import {toHexFast} from "../lib/Hex.mjs";
 import Operation from "../Operation.mjs";
 import Utils from "../Utils.mjs";
+import jsesc from "jsesc";
 
 /**
  * Extract Anchor Leak Info operation
@@ -54,6 +55,11 @@ class ExtractAnchorLeakInfo extends Operation {
                 anchoridUnescaped.length}, but it must be ${ExpectAnchoridLength}`);
         }
 
+        const anchoridEscaped = jsesc(anchoridUnescaped, {
+            escapeEverything: true,
+            lowercaseHex: true,
+        });
+
         const ecnLen = ecn.length;
         if (ecnLen !== ExpectEcnLength) {
             throw new OperationError(
@@ -86,7 +92,7 @@ class ExtractAnchorLeakInfo extends Operation {
             url}`;
         const anchorDataSql =
         `$ span sql /span/global/raffia-spanner:websearch-anchors.recipe "select * from RaffiaRecords where prefix=b'anchorData' and row_key=b'${
-            ecn}' and secondary_key=b'${anchorid}'"; `;
+            ecn}' and secondary_key=b'${anchoridEscaped}'"; `;
         const outlinksInfoSql = `$ span sql /span/global/raffia-spanner:${
             corpus}.recipe "select * from RaffiaRecords where prefix=b'outlinksInfo' and row_key=b'${
             url}' and secondary_key=b'outlink:${
