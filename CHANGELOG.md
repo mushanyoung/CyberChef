@@ -13,6 +13,60 @@ All major and minor version changes will be documented in this file. Details of 
 
 ## Details
 
+### [9.55.0] - 2022-12-09
+- Added 'AMF Encode' and 'AMF Decode' operations [@n1474335] | [760eff4]
+
+### [9.54.0] - 2022-11-25
+- Added 'Rabbit' operation [@mikecat] | [#1450]
+
+### [9.53.0] - 2022-11-25
+- Added 'AES Key Wrap' and 'AES Key Unwrap' operations [@mikecat] | [#1456]
+
+### [9.52.0] - 2022-11-25
+- Added 'ChaCha' operation [@joostrijneveld] | [#1466]
+
+### [9.51.0] - 2022-11-25
+- Added 'CMAC' operation [@mikecat] | [#1457]
+
+### [9.50.0] - 2022-11-25
+- Added 'Shuffle' operation [@mikecat] | [#1472]
+
+### [9.49.0] - 2022-11-11
+- Added 'LZ4 Compress' and 'LZ4 Decompress' operations [@n1474335] | [31a7f83]
+
+### [9.48.0] - 2022-10-14
+- Added 'LM Hash' and 'NT Hash' operations [@n1474335] [@brun0ne] | [#1427]
+
+### [9.47.0] - 2022-10-14
+- Added 'LZMA Decompress' and 'LZMA Compress' operations [@mattnotmitt] | [#1421]
+
+### [9.46.0] - 2022-07-08
+- Added 'Cetacean Cipher Encode' and 'Cetacean Cipher Decode' operations [@valdelaseras] | [#1308]
+
+### [9.45.0] - 2022-07-08
+- Added 'ROT8000' operation [@thomasleplus] | [#1250]
+
+### [9.44.0] - 2022-07-08
+- Added 'LZString Compress' and 'LZString Decompress' operations [@crespyl] | [#1266]
+
+### [9.43.0] - 2022-07-08
+- Added 'ROT13 Brute Force' and 'ROT47 Brute Force' operations [@mikecat] | [#1264]
+
+### [9.42.0] - 2022-07-08
+- Added 'LS47 Encrypt' and 'LS47 Decrypt' operations [@n1073645] | [#951]
+
+### [9.41.0] - 2022-07-08
+- Added 'Caesar Box Cipher' operation [@n1073645] | [#1066]
+
+### [9.40.0] - 2022-07-08
+- Added 'P-list Viewer' operation [@n1073645] | [#906]
+
+### [9.39.0] - 2022-06-09
+- Added 'ELF Info' operation [@n1073645] | [#1364]
+
+### [9.38.0] - 2022-05-30
+- Added 'Parse TCP' operation [@n1474335] | [a895d1d]
+
 ### [9.37.0] - 2022-03-29
 - 'SM4 Encrypt' and 'SM4 Decrypt' operations added [@swesven] | [#1189]
 - NoPadding options added for CBC and ECB modes in AES, DES and Triple DES Decrypt operations [@swesven] | [#1189]
@@ -135,7 +189,7 @@ All major and minor version changes will be documented in this file. Details of 
 
 <details>
     <summary>Click to expand v8 minor versions</summary>
-    
+
 ### [8.38.0] - 2019-07-03
 - 'Streebog' and 'GOST hash' operations added [@MShwed] [@n1474335] | [#530]
 
@@ -288,6 +342,24 @@ All major and minor version changes will be documented in this file. Details of 
 
 
 
+[9.55.0]: https://github.com/gchq/CyberChef/releases/tag/v9.55.0
+[9.54.0]: https://github.com/gchq/CyberChef/releases/tag/v9.54.0
+[9.53.0]: https://github.com/gchq/CyberChef/releases/tag/v9.53.0
+[9.52.0]: https://github.com/gchq/CyberChef/releases/tag/v9.52.0
+[9.51.0]: https://github.com/gchq/CyberChef/releases/tag/v9.51.0
+[9.50.0]: https://github.com/gchq/CyberChef/releases/tag/v9.50.0
+[9.49.0]: https://github.com/gchq/CyberChef/releases/tag/v9.49.0
+[9.48.0]: https://github.com/gchq/CyberChef/releases/tag/v9.48.0
+[9.47.0]: https://github.com/gchq/CyberChef/releases/tag/v9.47.0
+[9.46.0]: https://github.com/gchq/CyberChef/releases/tag/v9.46.0
+[9.45.0]: https://github.com/gchq/CyberChef/releases/tag/v9.45.0
+[9.44.0]: https://github.com/gchq/CyberChef/releases/tag/v9.44.0
+[9.43.0]: https://github.com/gchq/CyberChef/releases/tag/v9.43.0
+[9.42.0]: https://github.com/gchq/CyberChef/releases/tag/v9.42.0
+[9.41.0]: https://github.com/gchq/CyberChef/releases/tag/v9.41.0
+[9.40.0]: https://github.com/gchq/CyberChef/releases/tag/v9.40.0
+[9.39.0]: https://github.com/gchq/CyberChef/releases/tag/v9.39.0
+[9.38.0]: https://github.com/gchq/CyberChef/releases/tag/v9.38.0
 [9.37.0]: https://github.com/gchq/CyberChef/releases/tag/v9.37.0
 [9.36.0]: https://github.com/gchq/CyberChef/releases/tag/v9.36.0
 [9.35.0]: https://github.com/gchq/CyberChef/releases/tag/v9.35.0
@@ -410,12 +482,21 @@ All major and minor version changes will be documented in this file. Details of 
 [@t-8ch]: https://github.com/t-8ch
 [@hettysymes]: https://github.com/hettysymes
 [@swesven]: https://github.com/swesven
+[@mikecat]: https://github.com/mikecat
+[@crespyl]: https://github.com/crespyl
+[@thomasleplus]: https://github.com/thomasleplus
+[@valdelaseras]: https://github.com/valdelaseras
+[@brun0ne]: https://github.com/brun0ne
+[@joostrijneveld]: https://github.com/joostrijneveld
 
 [8ad18b]: https://github.com/gchq/CyberChef/commit/8ad18bc7db6d9ff184ba3518686293a7685bf7b7
 [9a33498]: https://github.com/gchq/CyberChef/commit/9a33498fed26a8df9c9f35f39a78a174bf50a513
 [289a417]: https://github.com/gchq/CyberChef/commit/289a417dfb5923de5e1694354ec42a08d9395bfe
 [e9ca4dc]: https://github.com/gchq/CyberChef/commit/e9ca4dc9caf98f33fd986431cd400c88082a42b8
 [dd18e52]: https://github.com/gchq/CyberChef/commit/dd18e529939078b89867297b181a584e8b2cc7da
+[a895d1d]: https://github.com/gchq/CyberChef/commit/a895d1d82a2f92d440a0c5eca2bc7c898107b737
+[31a7f83]: https://github.com/gchq/CyberChef/commit/31a7f83b82e78927f89689f323fcb9185144d6ff
+[760eff4]: https://github.com/gchq/CyberChef/commit/760eff49b5307aaa3104c5e5b437ffe62299acd1
 
 [#95]: https://github.com/gchq/CyberChef/pull/299
 [#173]: https://github.com/gchq/CyberChef/pull/173
@@ -482,10 +563,12 @@ All major and minor version changes will be documented in this file. Details of 
 [#674]: https://github.com/gchq/CyberChef/pull/674
 [#683]: https://github.com/gchq/CyberChef/pull/683
 [#865]: https://github.com/gchq/CyberChef/pull/865
+[#906]: https://github.com/gchq/CyberChef/pull/906
 [#912]: https://github.com/gchq/CyberChef/pull/912
 [#917]: https://github.com/gchq/CyberChef/pull/917
 [#934]: https://github.com/gchq/CyberChef/pull/934
 [#948]: https://github.com/gchq/CyberChef/pull/948
+[#951]: https://github.com/gchq/CyberChef/pull/951
 [#952]: https://github.com/gchq/CyberChef/pull/952
 [#965]: https://github.com/gchq/CyberChef/pull/965
 [#966]: https://github.com/gchq/CyberChef/pull/966
@@ -497,9 +580,23 @@ All major and minor version changes will be documented in this file. Details of 
 [#1045]: https://github.com/gchq/CyberChef/pull/1045
 [#1049]: https://github.com/gchq/CyberChef/pull/1049
 [#1065]: https://github.com/gchq/CyberChef/pull/1065
+[#1066]: https://github.com/gchq/CyberChef/pull/1066
 [#1083]: https://github.com/gchq/CyberChef/pull/1083
 [#1189]: https://github.com/gchq/CyberChef/pull/1189
 [#1242]: https://github.com/gchq/CyberChef/pull/1242
 [#1244]: https://github.com/gchq/CyberChef/pull/1244
 [#1313]: https://github.com/gchq/CyberChef/pull/1313
 [#1326]: https://github.com/gchq/CyberChef/pull/1326
+[#1364]: https://github.com/gchq/CyberChef/pull/1364
+[#1264]: https://github.com/gchq/CyberChef/pull/1264
+[#1266]: https://github.com/gchq/CyberChef/pull/1266
+[#1250]: https://github.com/gchq/CyberChef/pull/1250
+[#1308]: https://github.com/gchq/CyberChef/pull/1308
+[#1421]: https://github.com/gchq/CyberChef/pull/1421
+[#1427]: https://github.com/gchq/CyberChef/pull/1427
+[#1472]: https://github.com/gchq/CyberChef/pull/1472
+[#1457]: https://github.com/gchq/CyberChef/pull/1457
+[#1466]: https://github.com/gchq/CyberChef/pull/1466
+[#1456]: https://github.com/gchq/CyberChef/pull/1456
+[#1450]: https://github.com/gchq/CyberChef/pull/1450
+
